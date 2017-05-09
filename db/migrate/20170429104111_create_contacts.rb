@@ -3,9 +3,9 @@ class CreateContacts < ActiveRecord::Migration
     create_table :contacts do |t|
       t.string :name
       t.string :email
-      t.text :comment
+      t.text :comments
       
-      t.timestamp
+      t.timestamps
     end
   end
 end
